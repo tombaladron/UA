@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Inducción Unidad de Analisis"
+  navbar:
+    left:
+      - href: modulo UA/index.qmd
+        text: modulo UA
+      - href: modulo teorico/index.qmd
+        text: modulo teorico
+      - href: modulo practico/index.qmd
+  sidebar:
+    - id: modulo UA
+      contents:
+        - modulo UA/index.qmd
+        - modulo UA/intro.qmd
+        - modulo UA/1. Introduction.qmd
+    - id: modulo teorico
+      contents:
+        - modulo teorico/2. Matematico.qmd
+        - modulo teorico/3. Estandares.qmd
+        - modulo teorico/4. Psicometría.qmd
+        - modulo teorico/5. Teoría Clásica.qmd
+        - modulo teorico/6. IRT.qmd
+        - modulo teorico/7. R base.qmd
+    - id: modulo practico
+      contents:
+        - modulo practico/index.qmd
+        - modulo practico/intro.qmd
+
+author:
+  - name: Tom Baladrón Jaramillo
+    id: TB
+    email: tfbaladron@uc.cl
+    affiliation: Analista - Unidad de Psicometría y Análisis de Datos, MIDE UC
+
+lang: es
+
+fig-align: center
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    number-sections: true
+    number-depth: 3
